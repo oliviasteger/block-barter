@@ -10,17 +10,186 @@
     background-size: 400px;
     background-position: 600px center;
   }
+  body {
+    background-image: linear-gradient(to bottom, #2059E8, #1C59EF);
+  }
+  .center-container {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .container-header {
+    margin-top: 150px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .container-text {
+    border: 0px;
+    color: #c9daf8;
+    width: 450px;
+    margin-bottom: 15px;
+  }
+  .container-button {
+    font-weight: bold;
+    background-color: #43CB8B;
+    width: 150px;
+    height: 45px;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 14px;
+    -webkit-transition: background-color 1s;
+    -moz-transition:    background-color 1s;
+    -ms-transition:     background-color 1s;
+    -o-transition:      background-color 1s;
+    transition:         background-color 1s;
+  }
+  .container-button:hover {
+    background-color: #17A86D;
+  }
+  .white-container {
+    background-color: #fff;
+    margin-top: 200px;
+    width: 100%;
+  }
+  table {
+    width: 100%;
+  }
+  .tr-styled {
+    width: 33%;
+  }
+  .h3-styled {
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #2059E8;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .h3-styled-one {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #2059E8;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .table-text {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #595959;
+    margin-bottom: 40px;
+  }
+  .table-image {
+    margin-top: 70px;
+    width: 150px;
+  }
+  tr {
+    vertical-align: top;
+  }
+  table {
+    table-layout: fixed;
+  }
+  td {
+    width: 33%;
+  }
+  .number-stat {
+    padding-top: 30px;
+    color: #2059E8;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+  .footer {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #2059E8;
+    padding-bottom: 10px;
+  }
+  .footer-link {
+    color: black;
+    font-weight: light;
+    text-decoration: none;
+    -webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+  }
+  .footer-link:hover {
+    color: #2059E8;
+    text-decoration: none;
+  }
 </style>
-<div id="img">
+<!--<div id="img">-->
 <% provide(:title, "") %>
-<div class="info-container">
-  <h1 class="big-text">Cryptocurrency <br>for everyone</h1>
-  <h2 class="small-text">MINING SIMPLIFIED</h2>
-  <p class="info-text">
+<div class="center-container">
+  <center>
+  <h1 class="container-header">Cryptocurrency for everyone</h1>
+  <p class="container-text">
     Blockchain is hard to understand, and even harder to invest in. Make an account to
-    learn how you can create the most efficient mining system for your favorite cryptocurrency
+    learn how you can create the most efficient mining system for your favorite cryptocurrency.
   </p>
-  <button class="info-button" onclick="redirect()">GET STARTED</button>
+  <button class="container-button" onclick="redirect()">Get started</button>
 </div>
+
+<div class="white-container">
+  <table>
+    <tr>
+      <td style="padding-left: 30px;">
+        <h3 class="h3-styled">Options for everyone</h3>
+        <p class="table-text">If you aren’t ready to start mining, we compile market data for people who are just interested in investing.</p>
+      </td>
+      <td>
+        <h3 class="h3-styled">One step at a time</h3>
+        <p class="table-text">We’ll walk you through looking for the best currency to mine, then set you up with a top-rated wallet.</p>
+      </td>
+      <td  style="padding-right: 30px;">
+        <h3 class="h3-styled">Reliable sources</h3>
+        <p class="table-text">All of the cryptocurrencies and wallets on the website are verified scam-free, so you won’t lose money.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding-left: 30px;">
+        <h3 class="h3-styled-one">One hundred currencies</h3>
+        <p class="table-text">We have the top hundreed currencies currently in the market, so you'll be able to find the perfect one.</p>
+      </td>
+      <td>
+        <h3 class="h3-styled-one">Twelve wallets</h3>
+        <p class="table-text">We only support the top-rated wallets, and use each of them before we add them to the website.</p>
+      </td>
+      <td  style="padding-right: 30px;">
+        <h3 class="h3-styled-one">Tested for scams</h3>
+        <p class="table-text">Each currency and wallet is individually reviewed so that we can insure that there are no scams on the website.</p>
+      </td>
+    </tr>
+  </table>
+  <br>
 </div>
-<br><br><br><br><br><br><br>
+
+<div class="white-container" style="margin-top: 50px;">
+  <center>
+  <h1 class="number-stat">Supporting one hundred currencies & twelve wallets</h1>
+  </center>
+</div>
+
+<div class="white-container" style="margin-top: 50px;">
+  <table>
+    <tr>
+      <th class="footer">Site links</th>
+      <th class="footer">Support</th>
+      <th class="footer">Contact</th>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a class="footer-link" href="/signup">Create an account</a></td>
+      <td style="padding-left: 20px;"><a class="footer-link" href="/help">Frequently asked questions</a></td>
+      <td style="padding-left: 20px;"><a class="footer-link" href="mailto:ogsteger@gmail.com">Olivia Steger</a></td>
+    </tr>
+    <tr>
+      <td style="padding-left: 20px;"><a class="footer-link" href="/login">Log in to an account</a></td>
+      <td style="padding-left: 20px;"><a class="footer-link" href="mailto:ogsteger@gmail.com">Email the support team</a></td>
+      <td style="padding-left: 20px;"><a class="footer-link" href="mailto:noahb930@gmail.com">Noah Getz</a></td>
+    </tr>
+  </table>
+  <br>
+</div>

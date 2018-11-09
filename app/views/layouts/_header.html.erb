@@ -1,20 +1,20 @@
-<nav class="navbar navbar-default" style="margin-top: 25px;">
+<nav class="navbar navbar-default" style="padding-top: 25px; border-radius: 0px;">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" style="color: #FFFFFF; margin-left: 100px;" href="/">Block Barter</a>
+      <a class="navbar-brand" style="color: #FFFFFF; margin-left: 100px; font-weight: bold;" href="/">Block Barter</a>
     </div>
     <ul class="nav navbar-nav navbar-left">
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><%= link_to "", about_path %></li>
-      <li><%= link_to "SUPPORT", help_path %></li>
+      <li><%= link_to "Support", help_path %></li>
       <% if logged_in %>
-        <li><%= link_to "CURRENCIES", current_user %></li>
-        <li><%= link_to "WALLETS", "/wallet" %></li>
-        <li class="fun-button"><%= link_to "LOG OUT", logout_path, method: :delete %></li>
+        <li><%= link_to "Currencies", current_user %></li>
+        <li><%= link_to "Wallets", "/wallet" %></li>
+        <li class="fun-button"><%= link_to "Log out", logout_path, method: :delete %></li>
       <% else  %>
-        <li><%= link_to "LOG IN", login_path %></li>
-        <li class="fun-button"><%= link_to "REGISTER", signup_path %></li>
+        <li><%= link_to "Log in", login_path %></li>
+        <li class="fun-button"><%= link_to "Register", signup_path %></li>
       <% end %>
   </ul>
   </div>

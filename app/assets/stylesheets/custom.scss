@@ -1,30 +1,35 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:800,900|Nunito:400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,800');
 
 :root {
-  --accent-color-one: #005792;
+  --accent-color-one: #43CB8B;
   --text-color: #005792;
   --text-color-two: #edf9fc;
-  --background-color-one: #edf9fc;
-  --background-color-two: #d1f4fa;
-  --accent-color-two: #53cde2;
+  --background-color-one: #2059E8;
+  --background-color-two: #1C59EF;
+  --accent-color-two: #bbb;
+  --font-name: var(--font-name);
+  --font-weight-regular: 300;
+  --font-weight-bold: 900;
 }
 
 body {
   height: 100%;
-  background-image: linear-gradient(to bottom, var(--background-color-one), var(--background-color-two));
   background-position: center;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--text-color);
   overflow-y: hidden;
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--font-name);
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: #2059E8;
   border: 0px;
+  height: 100px;
+  margin-top: 0px;
 }
 
 .navbar-brand {
@@ -32,19 +37,17 @@ body {
 }
 
 h1 {
-  font-weight: 900;
   color: var(--accent-color-two);
 }
 
 .navbar-brand {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 900;
+  font-family: var(--font-name);
 }
 
-a {
-  font-family: 'Nunito Sans', sans-serif;
-  color: var(--accent-color-two) !important;
-  font-weight: 800 !important;
+li > a {
+  font-family: var(--font-name);
+  color: #fff !important;
+  font-weight: bold;
   -webkit-transition: color 1s;
   -moz-transition:    color 1s;
   -ms-transition:     color 1s;
@@ -53,10 +56,11 @@ a {
 
 }
 
-a:hover {
+li > a:hover {
   padding-bottom: 5px;
-  color: var(--accent-color-one) !important;
+  color: #c9daf8 !important;
 }
+
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -104,8 +108,7 @@ input {
 }
 
 .big-text {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 900;
+  font-family: var(--font-name);
   font-size: 60px;
 }
 
@@ -116,10 +119,8 @@ input {
 }
 
 .small-text {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 800;
+  font-family: var(--font-name);
   font-size: 14px;
-  font-weight: 600;
   color: var(--accent-color-one);
   margin-top: 20px;
   margin-bottom: 20px;
@@ -139,8 +140,7 @@ input {
   border: 2px solid var(--accent-color-one);
   color: var(--accent-color-one);
   border-radius: 20px;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 800;
+  font-family: var(--font-name);
   background-color: transparent;
   -webkit-transition: color 2s;
   -moz-transition:    color 2s;
@@ -156,15 +156,13 @@ input {
   border: 2px solid var(--accent-color-one);
   color: var(--text-color-two);
   border-radius: 20px;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 800;
+  font-family: var(--font-name);
   background-color: var(--accent-color-one);
 }
 
 label {
   color: var(--accent-color-one) !important;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 800;
+  font-family: var(--font-name);
 }
 
 form > input {
@@ -194,8 +192,7 @@ form > input[type="submit"] {
   border: 2px solid var(--accent-color-one);
   color: var(--accent-color-one);
   border-radius: 20px;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 800;
+  font-family: var(--font-name);
   background-color: transparent;
   -webkit-transition: color 2s;
   -moz-transition:    color 2s;
@@ -211,8 +208,7 @@ form > input[type="submit"]:hover {
   border: 2px solid var(--accent-color-one);
   color: var(--text-color);
   border-radius: 20px;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 800;
+  font-family: var(--font-name);
   background-color: var(--accent-color-one);
 }
 
@@ -226,7 +222,7 @@ form > input[type="submit"]:hover {
 
 .currency {
   width: 47%;
-  background-color: var(--accent-color-one);
+  background-color: #2059E8;
   border-radius: 20px;
   padding: 20px;
   padding-left: 30px;
@@ -244,8 +240,7 @@ form > input[type="submit"]:hover {
 }
 
 .currency-header {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 800;
+  font-family: var(--font-name);
 }
 
 .sign-up {
@@ -272,35 +267,34 @@ form > input[type="submit"]:hover {
 }
 
 .currency-desc {
-  border-top: 2px dotted var(--accent-color-one);
-  border-bottom: 2px dotted var(--accent-color-one);
+  border-top: 2px dotted #2059E8;
+  border-bottom: 2px dotted #2059E8;
   width: 47%;
   background-color: transparent;
   padding: 20px;
   padding-left: 30px;
-  color: var(--accent-color-one);
+  color: #2059E8;
 }
 
 .desc-dots {
   width: 40px;
-  border-bottom: 2px solid var(--accent-color-one);
+  border-bottom: 2px solid #2059E8;
   margin-bottom: 10px;
 }
 
 .currency-dec-header {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 800;
+  font-family: var(--font-name);
   color: var(--accent-color-two);
 }
 
 .h1-about-page {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: var(--font-name);
   weight: 800;
   color: var(--accent-color-two);
 }
 
 .p-about-page {
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--font-name);
   color: var(--accent-color-one);
 }
 
@@ -324,36 +318,24 @@ form > input[type="submit"]:hover {
 .fun-button > a {
   margin-top: 8px;
   margin-left: 10px;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-  background-color: var(--accent-color-two) !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  background-color: #43CB8B !important;
   display: inline-block !important;
-  border: 2px solid var(--accent-color-two) !important;
-  border-radius: 15px !important;
+  border: none;
+  border-radius: 5px !important;
   padding-top: 5px !important;
   padding-bottom: 5px !important;
   text-decoration: none !important;
-  color: var(--accent-color-one) !important;
-  -webkit-transition: color 2s;
-  -moz-transition:    color 2s;
-  -ms-transition:     color 2s;
-  -o-transition:      color 2s;
-  transition:         color 2s;
+  color: white !important;
+  -webkit-transition: background-color 2s;
+  -moz-transition:    background-color 2s;
+  -ms-transition:     background-color 2s;
+  -o-transition:      background-color 2s;
+  transition:         background-color 2s;
   margin-right: 100px;
 }
 
 .fun-button > a:hover {
-  margin-top: 8px;
-  margin-left: 10px;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-  background-color: transparent !important;
-  display: inline-block !important;
-  border: 2px solid var(--accent-color-two) !important;
-  border-radius: 15px !important;
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-  text-decoration: none !important;
-  color: var(--accent-color-two) !important;
-  margin-right: 100px;
+  background-color: #17A86D !important;
 }
